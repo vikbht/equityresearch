@@ -4,6 +4,8 @@ Aegis Equity Brief is a premium, high-fidelity web intelligence application buil
 
 The platform is designed around a stunning **Obsidian Glassmorphism** aesthetic, utilizing custom animations, high-fidelity SVGs, real-time stopwatch step checklists, and extensive telemetry reporting.
 
+![Aegis Equity Brief Dashboard Overview](assets/dashboard_overview.png)
+
 ---
 
 ## 🌟 Key Product Features
@@ -25,6 +27,8 @@ Visualizes direct metrics of model throughput and capacity:
 *   **Speed Tracking**: Real-time throughput measures in **Tokens per Second (tok/s)**.
 *   **Capacity Mapping**: Direct display of prompt token footprints and completion token counts.
 *   **Latency Stopwatch**: Microsecond precision generation timers resolving live in the loading board and permanently preserved below the briefing summary.
+
+![LLM Inference Telemetry & Citations](assets/telemetry_analysis.png)
 
 ### 4. Highlight Catalyst Sources (Audit Citation System)
 Accelerates review times by immediately showing source audit markers. 
