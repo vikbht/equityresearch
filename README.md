@@ -42,6 +42,26 @@ Accelerates review times by immediately showing source audit markers.
 
 ---
 
+## 📊 Sentiment Scoring & Interpretation
+
+To help Portfolio Managers immediately interpret market consensus, Aegis Equity Brief translates synthesized financial news flows into a standardized numerical **Sentiment Score** paired with a strategic label.
+
+### The Scoring Scale (0 to 100)
+
+*   🟢 **Strong Bullish (75 – 100)**: Unified positive catalyst consensus. Examples include record-breaking earnings reports, major regulatory clearances, or breakout product adoption.
+*   🟢 **Bullish (51 – 74)**: Positive momentum tempered by minor headwinds. Examples include solid growth metrics or favorable macro sector tailwinds, balanced by minor profit-taking or valuation concerns.
+*   🟡 **Neutral (50)**: Balanced news flow or highly conflicting market forces. Examples include steady-state operations, sideways product cycles, or positive catalysts offset equally by rising structural risks.
+*   🔴 **Bearish (25 – 49)**: Negative momentum or clear operational warnings. Examples include guidance downgrades, rising competition, supply chain disruptions, or impending legal investigations.
+*   🔴 **Strong Bearish (0 – 24)**: Severe distress or systemic downside. Examples include critical earnings misses, major fraud investigations, bankruptcy warnings, or crippling regulatory bans.
+
+### Real-World Examples from the Watchlist
+
+*   **NVDA (Score: 92 • Strong Bullish)**: Represents absolute consensus driven by massive AI data center demand (Product/Tech) and strong margin expansion (Financials), comfortably offsetting single-source packaging limitations.
+*   **AAPL (Score: 78 • Bullish)**: Represents solid momentum supported by premium iPhone demand inflections in key regions and record-authorized stock repurchases, balanced by European Union regulatory pressures.
+*   **TSLA (Score: 42 • Bearish)**: Reflects structural transition risks, global pricing wars/automotive margin compression, and Autopilot safety investigations, prompting immediate defensive adjustments.
+
+---
+
 ## 📂 Monorepo Directory Layout
 
 ```text
