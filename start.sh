@@ -52,4 +52,4 @@ npx concurrently \
   --names "Backend,Frontend" \
   --prefix-colors "magenta,cyan" \
   "PORT=$BACKEND_PORT npm run dev --prefix backend" \
-  "PORT=$FRONTEND_PORT VITE_BACKEND_URL=http://localhost:$BACKEND_PORT npm run dev --prefix frontend"
+  "PORT=$FRONTEND_PORT VITE_BACKEND_URL=http://localhost:$BACKEND_PORT npm run dev --prefix frontend -- --open"
