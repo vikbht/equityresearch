@@ -7,7 +7,7 @@ import ApiKeyModal from './components/ApiKeyModal';
 import { MOCK_SYNTHESES } from './utils/mockData';
 
 // Backend endpoint configuration
-const BACKEND_BASE = 'http://localhost:5001';
+const BACKEND_BASE = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5001';
 
 export default function App() {
   // Load unified connection settings
