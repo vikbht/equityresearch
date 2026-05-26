@@ -199,7 +199,12 @@ You must output a single, valid JSON object matching the following structure (do
       const responseData = await response.json();
       const endTime = performance.now();
       
+      if (responseData.error) {
+        throw new Error(`Ollama engine returned error: "${responseData.error}"`);
+      }
+
       if (!responseData.message || !responseData.message.content) {
+        console.error('[Ollama Debug] Malformed or empty response returned:', JSON.stringify(responseData));
         throw new Error('Ollama response returned empty content.');
       }
 

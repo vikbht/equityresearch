@@ -77,6 +77,12 @@ app.post('/api/synthesize', async (req, res) => {
       });
     }
 
+    // For local Ollama context size optimization & generation speed-up, cap the articles inside the prompt to the 10 most recent.
+    if (provider === 'ollama' && articlesToSynthesize.length > 10) {
+      console.log(`[synthesis] Capping news feed from ${articlesToSynthesize.length} to 10 most recent stories for local Ollama performance.`);
+      articlesToSynthesize = articlesToSynthesize.slice(0, 10);
+    }
+
     const synthesis = await synthesizeNewsUnified({
       ticker,
       articles: articlesToSynthesize,
