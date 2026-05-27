@@ -186,8 +186,8 @@ You must output a single, valid JSON object matching the following structure (do
           stream: false,
           options: {
             temperature: 0.2, // Keep temperature lower for strict structure
-            num_predict: 2048, // Prevent truncation
-            num_ctx: 8192      // Ensure large context window for multiple news articles
+            num_predict: 1536, // Prevent VRAM exhaustion while allowing full generation
+            num_ctx: 4096      // Optimized context window (50% reduction in allocation overhead)
           }
         })
       });
